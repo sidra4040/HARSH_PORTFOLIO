@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidra Bano Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9b38679e53.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul> 
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p style="font-weight: bold; ">Web Developer</p>
+                <h1>Hey, It's Me <span>Harshvardhan</span> Saxena <span id="element"></span> <br> From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------about------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/home.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p style="margin-top:15px;">I am Harshvardhan Saxena, persuing Integrated M.Tech Computer Science and Engineering with
+                        specialization in Artificial Intelligence & Machine Learning (AIML) from VIT Bhopal University. Currently.I am a web Developer,
+                        I am skilled in Pyhton,C++,Java, HTML/CSS,Javascript and tools like Dev c++,vs code,Nmap, R Programming
+                        Burpsuite etc. My passion for learning comes from my experience as a learner who always
+                        confronted my own learning differences.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing Web/App interfaces</li>
+                            <li><span>Cpp Programming</span><br>Solve problems in c++ language</li>
+                            <li><span>Java Programming</span><br>Solve problems in Java language</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-Current</span><br>Member of NSS club of VIT Bhopal </li>
+                            <li><span>2022-Curent</span><br>Team lead at Startup LLC</li>
+                            <li><span>2020-Current</span><br>UI/UX Design Executive at Coin Digital LTD</li>
+                            <li><span>2020-Current</span><br>Internship at ekart eCommerce. </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016(10<superscript>th 82%</superscript>)</span><br>Little flower international (MP)
+                            </li>
+                            <li><span>2018(12<superscript>th 86%</superscript>)</span><br>Sarvodya H.S school (MP)
+                            </li>
+                            <li><span>2020-Current(Int M.Tech (AIML)) 8.34CGPA</span><br>VIT Bhopal University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------services------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Develop the web sites </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Design Android</h2>
+                    <p>Design app proffessional </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-palette"></i>
+                    <h2>Develope Websites</h2>
+                    <p>Develope interactive websites </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ................portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Loan price pridiction</h3><p>Based on the credit history of a person, his family background, his occupation, the model has predicted whether the person will get a loan or not. </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                   
+                    
+
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Caeser Cipher Website </h3><p>This website will convert plain text into cipher text using caeser cipher for the protection of data against any third party or a attacker who want to know the messages between those two people. </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+               
+
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Handwriting & Digit Recognition </h3><p><p>This model recognizes characters and digits. Which can help in criminal cases by example in recognizing the number plate of a car. </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <a href="#" class="btn">See more </a>
+        </div>
+    </div>
+    <!-- ----contact------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>harshsaxena2994@gmail.com</p>
+                    <p> <i class="fa-sharp fa-solid fa-phone"></i>+91 96919 64295</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-envelope-circle-check"></i></a>
+                        <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="images/CV.pdf"  download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form  name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class ="btn btn2"> Submit</button>
+
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright&#169;2023 by Harshvardhan |All rights reserved </p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemeu=document.getElementById("sidemenu");
+
+        function openmenu(){
+sidemeu.style.right="0";
+        }
+        function closemenu(){
+sidemeu.style.right="-200px";
+        }
+ </script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwZldHLb1fQW7F6I6FXpK7x81_gdhM5Zyw-eOKbHhhePCMZegJwWfeVBClWUdZZfQzO/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+ <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i> </i> Machine Learning Enthausiast','WebDeveloper',  ],
+            typeSpeed: 70,
+            backSpeed:60,
+            loop:true
+            
+        });
+        
+       
+    </script>
+</body>
+
+</html>
